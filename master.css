@@ -1,0 +1,310 @@
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    color: var(--primary-color);
+    position: relative;
+    overflow-x: hidden;
+}
+.wrapper{
+    height: 100vh;
+    perspective: 10px;
+}
+/*Nav list start*/
+header
+{
+    position: relative;
+   /* top: 15px;*/
+    left: 0;
+    /*width: 100%;*/
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-left: 50%;*/
+    float: right;
+    margin-top: -3.25%;
+}
+header .nav ul
+{
+    list-style: none;
+    position: relative;
+    display: flex;
+    
+}
+header .nav ul li
+{
+    display:inline-block;
+
+}
+
+header .nav ul li a
+{
+    font-weight: 300;
+    margin-left: 40px;
+    padding: 8px 10px;
+    background: #f13501;
+    border-radius: 50px;
+    color: aliceblue;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+header .nav a:hover
+{
+    background-color: #333;
+    cursor: pointer;
+    pointer-events: auto;
+}
+/* Mobile Nav 
+@media (max-width: 952px){
+    
+}*/
+
+/*Nav list end*/
+
+/*Darkmode toggle
+#icon
+{
+    width: 30px;
+    cursor: pointer;
+    float: right;
+    margin-right: -55px;
+    margin-top: -25px;
+
+}*/
+
+
+
+/*Darkmode end*/
+.background
+{
+    background-size: cover;
+    height: 90vh;
+    max-width: auto;
+    position: fixed;
+    background-position: right;
+    display: flex;
+    margin-left: 25%;
+    top: 5%;
+    background-attachment: fixed;
+}
+/*Text start*/
+.textBox
+{
+    position: relative;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-left: 10px;
+    left: 1%;
+}
+.textBox h2
+{
+    font-size: 2em;
+    letter-spacing: 1px;
+    max-width: 600px;
+    letter-spacing: 2px;
+    margin-left: 13px;
+}
+.textBox h2 span{
+    color: #f13501;
+    font-weight: 900px;
+    font-size: 1.2em;
+}
+.textBox .text1
+{
+    margin-top: 190px;
+    font-size: large;
+
+}
+
+/*Emoji animate*/
+.emoji{
+    font-size: 50px;
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes waving-hand{
+    0% {
+            transform: rotate(0deg);}
+     10% {
+            transform: rotate(14deg);}
+    20% {
+            transform: rotate(-8deg);}
+     30% {
+            transform: rotate(14deg);}
+     40% {
+            transform: rotate(-4deg);}
+     50% {
+            transform: rotate(10deg);}
+     60% {
+            transform: rotate(0deg);}
+    100% {
+                transform: rotate(0deg);}                
+}
+/*Emoji end*/
+.text1
+{
+    margin-left: 15px;
+    position: absolute;
+}
+/*Social media links start*/
+ .social
+ {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    margin-top: -9%;
+    left: 38%;
+    bottom: 15px;  
+    padding: 20px 90px;
+    flex-direction: row;
+ }
+ .social img
+ {
+    width: 40px;
+    height: 40px;
+ }
+ .social img:hover
+ {
+    transition: transform 0.3s ease;
+    transform: translateY(-10px);  
+ }
+
+ .social li
+ {
+    margin: 10px;
+    margin-top: 40px;
+ }
+/*Social links end*/
+/*Profile pic*/
+ .profile
+ {
+   /* max-width: 400px;
+    max-height: 400px;
+    margin-left: 65%;
+    margin-top: -8%;
+    border: 4px solid #333;
+    position: relative;
+    width: auto;
+    height: 30vh;*/
+    width: 30%;
+    height: 33%;
+    margin-left: 60%;
+    background-position: right;
+    margin-top: -7%;
+    position: relative;
+    border: 4px solid #333;
+
+ }
+
+ /*About section start*/
+
+ .second 
+ {
+    position: relative;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-left: 10px;
+    left: 1.5%;
+ }
+ .abouth2
+ {
+    color: #f13501;
+ }
+ .second p1
+ {
+    font-size: large;
+ }
+/*Education*/
+ .ed
+ {
+    position: relative;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-left: 10px;
+    left: 1.5%
+    /*border: 0.2em solid black;
+    border-radius: 20px;*/
+ }
+
+ .ed h2
+ {
+    color: #f13501;
+ }
+
+ .educationp
+ {
+    font-size: large;
+ }
+
+.edimg
+{
+    width: 30%;
+    height: 30%;
+    margin-left: 50%;
+    background-position: right;
+    margin-top: -23%;
+    position: relative;
+}
+/*Education End*/
+.third
+{
+    position: relative;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    left: 1.5%;
+}
+
+
+
+.forth
+{
+    position: relative;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    left: 1.5%;
+    margin-top: 15%;
+}
+.forth a
+{
+    position: relative;
+    margin-top: 15%;
+    display: flex;
+    padding: 13px 05px;
+    text-decoration: none;
+    background-color: #f13501;
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+
+.forth a:hover
+{
+    background-color: #333;
+    cursor: pointer;
+}
+
+
+.returnbtn
+{
+    margin-left: 45%;
+    font-size: 1.25em;
+    color: #333;
+}
